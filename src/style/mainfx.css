@@ -1,0 +1,67 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.choice-box .label {
+     -fx-text-fill: white; 
+}
+.vPaneMenu{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.anchorPrincipal {
+    -fx-background-color: #ffffff; /* Altera a cor do plano de fundo do header para a mesma cor do fundo da aplicação */
+    -fx-border-color:  #dbe2e8; /* Define a cor da borda para a mesma cor da borda das abas */
+    -fx-border-width: 0px 0px 1px 0px;  /* Define que a borda inferior terá 1 px (top, left, bottom, right) */
+}
+
+.button-plus{
+    -fx-text-fill: #ffffff;
+    -fx-width:40px;
+
+    -fx-background-radius: 25px;
+    -fx-font-size: 12pt;
+}
+/*Gráfico Pizza*/
+.chart {
+    -fx-clockwise: false;
+    -fx-pie-label-visible: true;
+    -fx-label-line-length: 8;
+    -fx-start-angle: 90;
+    -fx-legend-side: right;
+}
+
+.chart-pie-label {
+    -fx-font-size: 9px;
+    -fx-font-family: Roboto Light;
+}
+
+.chart-pie-label-line {
+    -fx-fill: red;
+}
+
+.chart-title {
+    -fx-font-family: Roboto;
+    -fx-font-size: 15px;
+}
+
+.chart-legend-item-symbol {
+    -fx-shape: "M0 -3.5 v7 l 4 -3.5z";
+}
+
+.chart-legend {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 4px;
+    -fx-border-color: #696969;
+    -fx-border-width: 1;
+    -fx-border-radius: 4px;
+    -fx-font-size: 9px;
+}
+
+
+.default-color0.chart-series-line { -fx-stroke: #59d334; }
+.default-color1.chart-series-line { -fx-stroke: #FF0000; }
+
+.default-color0.chart-line-symbol {-fx-background-color: #59d334, #ffffff;}
+.default-color1.chart-line-symbol {-fx-background-color: #FF0000, #ffffff;}
+/* -fx-border-radius: 50px; */

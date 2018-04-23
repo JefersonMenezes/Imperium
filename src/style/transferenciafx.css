@@ -1,0 +1,26 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color:#ffffff;
+}
+
+.paneTitulo{
+    -fx-background-color:#9933cc;
+}
+
+.titulo {
+    -fx-font-size:25px;
+    -fx-text-fill:#ffffff;
+}
+
+.btVoltar {
+    -fx-font-size:25px;
+    -fx-text-fill:#ffffff;
+}
+.btSalvar {
+    -fx-background-color:#69039b;
+    -fx-font-size:12px;
+    -fx-text-fill:#ffffff;
+}
