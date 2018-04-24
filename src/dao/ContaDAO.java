@@ -51,7 +51,8 @@ public class ContaDAO {
 
     public List<Conta> listaContasUser(Usuario user) {
         String sql = "SELECT conta.id, conta.nome, conta.saldo_inicial, conta.inclui_soma, tipo_conta.tipo, tipo_conta.id as tipo_id FROM financa.conta JOIN financa.tipo_conta ON conta.tipo_conta_id = tipo_conta.id WHERE usuario_id = ?";
-        try {
+        
+        String sqlN = "SELECT c.id, c.nome, c.saldo_inicial, c.inclui_soma, t.id, t.tipo FROM financa.conta as c inner join financa.tipo_conta as t on t.id = c.tipo_conta_id where usuario_id=1;";        try {
             List<Conta> contas = new ArrayList<Conta>();
             PreparedStatement stmt = conexao.prepareStatement(sql);
             stmt.setInt(1, user.getId());

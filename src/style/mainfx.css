@@ -3,8 +3,18 @@
  */
 
 .choice-box .label {
-     -fx-text-fill: white; 
+     -fx-text-fill: #a09d9d; 
+    
 }
+.choice-box {
+     -fx-border-color: #a09d9d; 
+     -fx-border-radius: 5px;
+     -fx-background-radius: 10px;
+     -fx-font-size:15px;
+     -fx-padding: 0px;
+     -fx-font-weight:500;
+}
+
 .vPaneMenu{
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
 }
