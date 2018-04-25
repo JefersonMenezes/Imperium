@@ -19,7 +19,7 @@ public class ConnectionFactory {
     public Connection getConnection() {
         System.out.println("Conectando ao banco...");
         try {
-            return DriverManager.getConnection("jdbc:mysql://localhost/financa", "root", "root");
+            return DriverManager.getConnection("jdbc:mysql://localhost/financa?useSSL=false", "root", "root");
         } catch (SQLException ex) {
             throw new RuntimeException("Erro ao conectar  ao banco"+ex);
         }
